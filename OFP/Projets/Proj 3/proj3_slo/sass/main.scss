@@ -1,0 +1,25 @@
+$color1 : red;
+
+
+body {
+
+background-color: $color1;
+ p{
+     background-color: yellow;
+ }
+}
+
+p {
+color: $color1;
+
+    &:hover{
+  color:  green;
+} 
+
+}
+
+h1{
+    &::after {
+      border: solid red;  
+    }
+}

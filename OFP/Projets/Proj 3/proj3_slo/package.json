@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "sass": "^1.49.7"
+  },
+  "name": "proj3_slo",
+  "version": "1.0.0",
+  "main": "script.js",
+  "devDependencies": {},
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

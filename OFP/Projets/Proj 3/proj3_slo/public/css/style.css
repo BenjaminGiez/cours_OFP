@@ -1,0 +1,19 @@
+body {
+  background-color: red;
+}
+body p {
+  background-color: yellow;
+}
+
+p {
+  color: red;
+}
+p:hover {
+  color: green;
+}
+
+h1::after {
+  border: solid red;
+}
+
+/*# sourceMappingURL=style.css.map */

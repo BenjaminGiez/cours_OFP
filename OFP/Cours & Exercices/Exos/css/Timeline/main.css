@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(230,230,230);
+    color: rgb(50,50,50);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 112.5%;
+    line-height: 1.6em;
+    }
+    .timeline {
+    width: 660px;
+    }
+    .timeline li {
+    padding: 1em 0;
+    }
+    .desc {
+    font-size: 0.77777em;
+    font-style: italic;
+    line-height: 1.5em;
+    }
+    .time-wrapper {
+    line-height: 1em;
+    font-size: 0.66666em;
+    
+    color: rgb(250,80,80);
+    }
+    .flag {
+    font-weight: 600;
+    }
+    .direction-r, .direction-l {
+    width: 300px;
+    }

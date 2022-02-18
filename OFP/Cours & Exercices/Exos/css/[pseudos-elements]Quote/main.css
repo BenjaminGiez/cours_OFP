@@ -1,0 +1,44 @@
+.quote
+{
+    border: solid;
+    border-width: 1px;
+    background-color: rgb(212, 228, 241);
+    margin: 25%;
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+}
+.quote::before
+{
+        content: '';
+        width: 10px;
+        height: 85px;
+
+        background: rgb(94, 91, 91);
+        position: absolute;
+        left: 10px; top: 7px;
+	transition: background-color 1s;     
+	animation-name: labar;     
+	animation-duration: 10s;     
+	animation-iteration-count: infinite;     
+	animation-direction: alternate;     
+} 
+
+@keyframes labar {
+    from{
+        background-color: orange;
+    }
+    25%{
+        background-color: blue;
+    }
+    50%{
+        background-color: purple;
+    }
+    75%{
+        background-color: red;
+    }
+    to{
+        background-color: orange;
+    }
+}

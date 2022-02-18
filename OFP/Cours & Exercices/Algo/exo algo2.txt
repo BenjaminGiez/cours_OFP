@@ -1,0 +1,29 @@
+Ex 6			
+
+variable A : nombre
+saisir A
+si A est nombre
+A <- A*A
+Afficher A
+Sinon
+Afficher "saisir un nombre"
+
+Ex 7
+
+Variables : Prix HT, Prix TTC, TVA, Nbre d'articles : nombres
+Saisir Prix HT
+Saisir Nbre d'articles
+Saisir TVA
+Prix TTC <- 
+((prix HT * TVA) + prix HT) * nbre d'articles
+Affiche prix TTC
+
+Ex 8
+
+Variable : Nb : Nombres
+Saisir Nb 
+Si Nb >= 0 alors
+Affiche "positif"
+Sinon 
+Affiche "negatif"
+Fin Si

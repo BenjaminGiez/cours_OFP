@@ -1,0 +1,57 @@
+Ex1
+
+SELECT * FROM `villes_france_free` 
+ORDER BY ville_population_2012 DESC
+limit 10
+
+Ex 2
+
+SELECT * FROM `villes_france_free` 
+ORDER BY ville_surface
+limit 50
+
+Ex 3
+SELECT departement_code FROM departement
+WHERE departement_code >= 97
+
+Ex 4
+
+SELECT * FROM `villes_france_free` 
+INNER JOIN departement ON departement_code = ville_departement
+ORDER BY ville_population_2012 DESC
+limit 10
+
+Ex 5
+
+SELECT ville_commune, departement_nom, departement_code FROM villes_france_free
+INNER JOIN departement ON ville_departement = departement_code
+ORDER BY ville_commune DESC
+
+
+Ex 6
+
+SELECT ville_commune, departement_nom, departement_code FROM villes_france_free
+INNER JOIN departement ON ville_departement = departement_code
+ORDER BY ville_surface DESC
+LIMIT 10
+
+Ex 7
+
+SELECT COUNT(*) FROM villes_france_free
+WHERE ville_nom LIKE 'saint%'
+LIMIT 100
+
+Ex 8
+
+
+
+Ex 9
+
+
+
+Ex 10
+
+
+
+Ex 11
+

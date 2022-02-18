@@ -1,0 +1,38 @@
+exercice 17:
+Variable Nombre (N), Nombreplusgrand(NPG), Position (P) : Nombre
+Pour compteur ← 1 à 10 Faire
+	Saisir N
+	  Si compteur = 1 Alors
+		NPG ← N	
+	Fin Si
+	  Si nombre > NPG Alors
+		NPG ← N
+	Fin Si
+Compteur Suivant
+  Afficher NPG
+
+NPG ← 0
+Pour compteur ← 1 à 10 Faire
+	Saisir N
+	  Si N > NPG Alors
+		NPG ← N
+	  Fin Si
+Compteur Suivant
+Afficher NPG
+
+
+Exercice 13:
+
+Variables : Nombre de Photocopies (NP), Prix Total (PT)
+Saisir NP
+	PT ← 0
+	Pour C ← 1 à NP Faire
+		Si C <= 10 Alors
+	  	 PT ← PT + 0.10
+		SinonSi C <= 30 Alors
+		 PT ← PT + 0.09
+		Sinon
+		 PT ← PT + 0.08
+		FinSi
+	C Suivant
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>tableau chat</title>
+</head>
+
+<body>
+
+    <!-- Le Tableau ou seront apporter les chat ajouter. -->
+    <div>
+        <form>
+            <table id="tableauChat" style="border: 1px solid black; background-color: rgb(175, 112, 235);">
+                <th><input type="checkbox"></th>
+                <th>Nom</th>
+                <th>Age</th>
+                <th>Commentaire</th>
+                <tr>
+                    <td></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div>
+        <!-- formulaire pour ajouter un chat -->
+        <form id="infoNouveauChat" onsubmit="ajoutChat(this)">
+            <input type="text" placeholder="Nom du chat" id="nomChat">
+            <input type="number" placeholder="Age du chat" min="0" max="25" id="ageChat">
+            <input type="text" placeholder="Commentaire" id="comChat">
+            <input type="submit" value="Ajouter le chat">
+        </form>
+    </div>
+
+    <!-- Le script est a mettre après les form/table et autres, sinon pas d'interaction -->
+    <script type="text/javascript">
+        function ajoutChat() {
+            var nom = document.getElementById("nomChat").value;
+            var age = document.getElementById("ageChat").value;
+            var com = document.getElementById("comChat").value;
+            // alert pour test, à mettre en com après
+
+            // alert("chat ajouter " + nom + " " + age + " " + com + " " + tableau);
+
+            // Récupération d'une référence à la table
+            var tableau = document.getElementById("tableauChat");
+
+            // Insère une ligne dans la table à l'indice de ligne 0
+            var nouvelleLigne = tableau.insertRow(0);
+
+            // Insère une cellule dans la ligne à l'indice 0
+            var nouvelleCellule0 = nouvelleLigne.insertCell(0);
+            // Insère une cellule dans la ligne à l'indice 1
+            var nouvelleCellule1 = nouvelleLigne.insertCell(1);
+            // Insère une cellule dans la ligne à l'indice 2
+            var nouvelleCellule2 = nouvelleLigne.insertCell(2);
+            // Insère une cellule dans la ligne à l'indice 3
+            var nouvelleCellule3 = nouvelleLigne.insertCell(3);
+            // Ajoute un nœud texte à la cellule0
+            var nouveauTexte0 = document.createTextNode('Nouvelle ligne supérieure')
+            // Ajoute un nœud texte à la cellule1
+            var nouveauTexte1 = document.createTextNode('Nouvelle ligne supérieure')
+            // Ajoute un nœud texte à la cellule2
+            var nouveauTexte2 = document.createTextNode('Nouvelle ligne supérieure')
+            // Ajoute un nœud texte à la cellule
+            var nouveauTexte3 = document.createTextNode('Nouvelle ligne supérieure')
+            nouvelleCellule0.appendChild(nom);
+            nouvelleCellule1.appendChild(nom);
+            nouvelleCellule2.appendChild(age);
+            nouvelleCellule3.appendChild(com);
+        }
+    </script>
+</body>
+
+
+
+</html>
